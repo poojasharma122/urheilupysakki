@@ -40,15 +40,15 @@ ul {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #ccc;
+    background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fe8f9c;
+    background: #d5f637;
     border-radius: 10px;
 }
 
@@ -78,74 +78,9 @@ p {
     top: 0;
     left: 0;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
-    background-color: #2d0572;
+    background-color: #000;
 }
 
-/* Sticky Header Effects */
-header.sticky {
-    border-bottom: 0.0625rem solid rgba(255, 200, 39, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.0625rem 0.25rem;
-}
-
-
-
-.navbar img {
-    max-width: 9.5rem;
-    justify-self: start;
-    /* margin-left: 1.25rem; */
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navbar ul li {
-    padding: 0 0 0 24px;
-}
-
-.nav-item a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    position: relative;
-    padding-bottom: 6px;
-}
-
-.nav-item a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    border-radius: 0.3125rem;
-    height: 0.09375rem;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fe8f9c;
-    transform-origin: center;
-    transition: all 0.3sease-out;
-}
-
-.logo {
-    background-image: url(../images/logo.png);
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 43px;
-}
-
-.nav-item a.active::after {
-    transform: scaleX(0.9);
-    transform-origin: center;
-}
-
-.nav-item a.active,
-.nav-item a:hover {
-    color: #fe8f9c;
-}
 
 .mb-20 {
     margin-bottom: 20px;
@@ -212,24 +147,190 @@ header.sticky {
 Mobile Menu Styles
 =================================
 */
-.menu-toggle {
-    justify-self: end;
-    margin-right: 1.5625rem;
+
+/* Header CSS Start */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    padding: 0 40px;
+    background-color: #111;
+    padding: 0.9375rem 0px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9375rem 0;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.brand-container {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.brand-container a ,.footer_logo
+ {
+    background-image: url(../images/logo.svg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.75rem;
+    width: 14.75rem;
     display: none;
 }
-
-.menu-toggle .bar {
-    width: 1.5625rem;
-    height: 0.1875rem;
-    background-color: #000;
-    margin: 0.3125rem auto;
-    transition: all 0.3s ease-in-out;
+.footer_logo{
+    display: inline-block;
 }
-
-.menu-toggle:hover {
+.menu-toggle-btn {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    text-align: right;
     cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background-image: url("../images/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.navigation-menu {
+    display: flex;
+}
+
+.navigation-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menu ul li a {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+.navigation-menu ul li a:hover {
+    color: #d5f637;
+}
+
+.navigation-menu ul li a.active {
+    color: #d5f637;
+}
+
+.navigation-menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #d5f637;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-menu ul li a.active::after {
+    transform: scaleX(0.9);
+    background: #d5f637;
+    transform-origin: center;
+}
+
+.navigation-menu ul li a:hover::after {
+    transform: scaleX(0.9);
+}
+
+.menu-close-btn {
+    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/close.png);
+}
+
+
+
+.topbar {
+    background: #000;
+    color:#d5f637;
+}
+   .marquee-container {
+    margin: 0 auto;
+      width: 300px;
+padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+.nav_topbar .brand-container a{
+    display: inline-block;
+}
+.nav_topbar_wrapper {
+    background-color: #313131;
+}
+.nav_topbar  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_topbar .social_profile ul li a {
+    border:none;
+}
+.nav_topbar .social_profile ul li a {
+    border: none;
+    background: transparent;
+}
+.nav_topbar .social_profile ul li a svg {
+    fill: #d5f637;
+}
+.nav_topbar .social_profile ul li a:hover {
+    border: none;
+    color: #d5f637;
+}
 /* Mobile Menu Active State */
 
 #mobile-menu.is-active .bar:nth-child(2) {
@@ -266,56 +367,75 @@ Keyframe Animations
 
 /* banner section css start */
 
-.homepage {
-    background: url(../images/home-banner.jpg) no-repeat;
-    background-size: cover;
-    padding: 140px 0;
-    height: 600px;
-    object-fit: cover;
-    background-position: center;
+
+.hotel_cat_cards {
+    overflow: hidden;
+}
+.slick-list.draggable {
+    height: 43.75rem;
+}
+body .slick-track {
+    height: 100%;
+}
+.banner_slides {
+    height: 100%;
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+
+.slide_content {
+    text-align: center;
+    padding: 0 0.9375rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 2.1875rem;
+    opacity: 1;
+}
+
+.hotel_cat_cards button.slick-prev {
+    left: 0;
     z-index: 1;
 }
 
-.homepage.second {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.hotel_cat_cards button.slick-next {
+    right: 0;
+    z-index: 1;
 }
 
-.homepage .bnr-text h1 {
-    color: #fff;
-    font-size: 42px;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 20px;
-    line-height: 50px;
-    font-weight: 700;
+.hotel_cat_cards .slick-arrow {
+    width: auto !important;
+    height: auto !important;
 }
 
-section.homepage .bnr-text p {
-    color: #fff;
-    font-size: 16px;
-    width: 100%;
-    line-height: 25px;
-    max-width: 600px;
-    margin-bottom: 20px;
+.slick-prev svg,
+.slick-next svg {
+    width: 5rem;
+    height: 5rem;
+    fill: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
-section.homepage::after {
-    content: "";
-    background-color: rgba(0, 0, 0, 60%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    z-index: -1;
+.slick-prev:hover svg,
+.slick-next:hover svg {
+    opacity: 1;
+    transform: scale(1.05);
 }
+
 
 /* banner section end */
 
@@ -327,7 +447,7 @@ section.homepage::after {
     font-size: 40px;
     text-align: center;
     line-height: 40px;
-    color: #fe8f9c;
+    color: #191919;
 }
 
 .after-banner {
@@ -366,17 +486,18 @@ section.homepage::after {
     padding: 10px 15px;
     border-radius: 50px;
     cursor: pointer;
-    background-color: #fe8f9c;
-    border: 2px solid #fff;
+    background-color: #d5f637;
+    border: 2px solid #d5f637;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 
 .getknow:hover {
     background-color: #fff;
-    color: #fe8f9c;
-    border: 2px solid #fe8f9c;
+    color: #000;
+    border: 2px solid #d5f637;
+    transition: 0.3s all ease-in-out;
 }
 
 .home-button {
@@ -392,7 +513,7 @@ section.homepage::after {
 }
 
 .section-heading h2 {
-    color: #2d0572;
+    color: #191919;
     font-size: 40px;
     font-weight: 600;
     line-height: 40px;
@@ -402,7 +523,7 @@ section.homepage::after {
 
 .section-heading h5 {
     font-size: 25px;
-    color: #fe8f9c;
+    color: #363636;
     font-weight: 600;
     line-height: 25px;
     margin-bottom: 20px;
@@ -416,7 +537,7 @@ section.homepage::after {
 
 .product-heading h5 {
     font-size: 25px;
-    color: #fe8f9c;
+    color: #000;
     font-weight: 600;
     line-height: 25px;
     margin-bottom: 20px;
@@ -436,7 +557,7 @@ section.homepage::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: #fe8f9c4f;
+    background: rgba(214, 246, 55, 0.30);
     border-radius: inherit;
     transition: all 0.2s linear;
     transform: scale(0);
@@ -484,7 +605,7 @@ section.homepage::after {
 }
 
 .why-choose-heading h2 {
-    color: #2d0572;
+    color: #191919;
     font-size: 40px;
     font-weight: 600;
     line-height: 40px;
@@ -517,7 +638,7 @@ section.homepage::after {
 
 .why-choose-main h5 {
     font-size: 20px;
-    color: #fe8f9c;
+    color: #191919;
     font-weight: 600;
     line-height: 25px;
 }
@@ -711,7 +832,7 @@ section.homepage::after {
 
 .latest-blog-text h5 {
     font-size: 20px;
-    color: #2d0572;
+    color: #3b3b3b;
     line-height: 25px;
     max-width: 300px;
 }
@@ -719,7 +840,7 @@ section.homepage::after {
 .blog-heading h2 {
     font-size: 40px;
     font-weight: 600;
-    color: #2d0572;
+    color: #191919;
     line-height: 40px;
     font-family: math;
 }
@@ -734,8 +855,7 @@ section.homepage::after {
 
 /* Footer  CSS Start */
 .footer {
-    box-shadow: #fe8f9c 0px 5px 8px 7px;
-    background: #2d0572;
+background-color: #111111;
 }
 
 .self_footer h4 img {
@@ -747,13 +867,13 @@ section.homepage::after {
     display: block;
     height: 2px;
     width: 90px;
-    background: #fe8f9c;
+    background: #d5f637;
     margin-top: 20px;
     font-family: math;
 }
 
 .self_footer h4 {
-    color: #fe8f9c;
+    color: #d5f637;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 700;
@@ -763,7 +883,7 @@ section.homepage::after {
 }
 
 .self_footer p {
-    color: #fe8f9c;
+    color: #d5f637;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -792,7 +912,7 @@ section.homepage::after {
 }
 
 .self_footer ul li a:hover {
-    color: #fe8f9c;
+    color: #d5f637;
 }
 
 .self_footer_address ul li {
@@ -802,7 +922,7 @@ section.homepage::after {
 
 .self_footer_address ul li span {
     font-weight: 400;
-    color: #fe8f9c;
+    color: #d5f637;
     line-height: 28px;
 }
 
@@ -849,17 +969,15 @@ section.homepage::after {
     border-radius: 50%;
     width: 2.8125rem;
     height: 2.8125rem;
-    border: 2px solid #fe8f9c;
-    background: #fe8f9c;
+    border: 2px solid #d5f637;
+    background: #d5f637;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 .social_profile ul li a:hover {
-    background: transparent;
-    border: 2px solid #fe8f9c;
-    color: #fe8f9c;
+transform: translateY(-3px);
 }
 
 .copyright {
@@ -883,16 +1001,16 @@ section.homepage::after {
 .social_profile ul li a svg {
     height: 100%;
     width: 100%;
-    fill: #fff;
+    fill: #000;
 }
 
 .social_profile ul li a {
-    border: 1px solid #fe8f9c;
+    border: 1px solid #d5f637;
     padding: 12px;
 }
 
 .bottom_strip {
-    border-top: 1px solid #fe8f9c;
+    border-top: 1px solid #d5f637;
 }
 
 .copy_txt p {
@@ -920,13 +1038,13 @@ section.homepage::after {
 .disclamer-heading {
     text-align: center;
     margin-bottom: 40px;
-    border-bottom: 1px solid #fe8f9c;
+    border-bottom: 1px solid #d5f637;
 }
 
 
 .disclamer-heading h5 {
     font-size: 25px;
-    color: #fe8f9c;
+    color: #d5f637;
     font-weight: 600;
     line-height: 25px;
     margin-bottom: 20px;
@@ -994,3 +1112,106 @@ section.homepage::after {
 
 
 /* skking-product css start */
+
+
+
+
+
+
+
+
+
+
+
+section.common-banner {
+background: #2d0572;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+text-align: center;
+height: 450px;
+position: relative;
+}
+
+.common-text {
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+left: 50%;
+color: #fff;
+width: 100%;
+}
+
+.common-text h2 {
+font-size: 60px;
+}
+
+.common-text p {  
+font-size: 18px;  
+line-height: 30px;   
+padding-top: 14px;
+color: #fff;
+}
+
+
+.privacy-container {
+max-width: 1200px;
+margin: 50px auto;
+padding: 30px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-section p {
+font-size: 18px;
+}
+
+.privacy-section li {
+font-size: 18px;
+}
+
+.privacy-title {
+font-size: 2.2rem;
+margin-bottom: 30px;
+color: #2d0572;
+}
+
+.privacy-section {
+margin-bottom: 40px;
+}
+
+.privacy-heading {
+font-size: 25px;
+margin-bottom: 15px;
+padding-bottom: 5px;
+border-bottom: 2px solid #eaeaea;
+color: #fe8f9c;
+}
+
+.privacy-text {
+margin-bottom: 15px;
+color: #000;
+}
+
+.privacy-list {
+padding-left: 20px;
+margin-bottom: 20px;
+}
+
+.privacy-list li {
+margin-bottom: 10px;
+}
+
+.privacy-section a {
+color: #fe8f9c;
+text-decoration: none;
+}
+
+.privacy-section a:hover {
+text-decoration: underline;
+}
+
+
+
+
