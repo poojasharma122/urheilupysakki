@@ -88,7 +88,6 @@ p {
 .header-section {
     background-color: #fff;
     border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.10);
-    /* padding: 0.75rem 0; */
     z-index: 9999;
     position: sticky;
     top: 0;
@@ -131,11 +130,11 @@ p {
 }
 
 .pt-80 {
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 
 .mt-80 {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .pt-120 {
@@ -143,11 +142,11 @@ p {
 }
 
 .pb-80 {
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 
 .py-80 {
-    padding: 80px 0;
+    padding: 5rem  0;
 }
 
 .bg_light {
@@ -603,7 +602,7 @@ body .slick-track {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     position: relative;
     object-fit: cover;
 }
@@ -698,8 +697,8 @@ body .slick-track {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     margin-bottom: 16px;
 }
 
@@ -718,7 +717,7 @@ body .slick-track {
 
 
 .why-choose-main h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #191919;
     font-weight: 600;
     line-height: 25px;

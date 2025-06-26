@@ -81,6 +81,9 @@ font-size: 45px;
     .img_part {
         height: 300px;
     }
+    .card-img {
+        height: 20rem;
+    }
 }
 
 
@@ -111,6 +114,9 @@ font-size: 1.2rem;
 table {
     min-width: 31.25rem;
 }
+.card-img {
+    height: 15rem;
+}
 }
 
 
@@ -119,5 +125,8 @@ table {
 @media screen and (max-width: 480px) {
 .common-text h2 {
 font-size: 40px;
+}
+.signup_form {
+    flex-direction: column;
 }
 }
