@@ -106,6 +106,9 @@ font-size: 45px;
     .text_part {
         padding: 0;
     }
+    .sub-banner-content h1 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -165,6 +168,9 @@ table {
 }
 .blog-heading h2 {
     font-size: 2rem;
+}
+.sub-banner {
+    height: 25.125rem;
 }
 }
 
