@@ -1,3 +1,9 @@
+@media screen and (max-width:1199px){
+html{
+    font-size: 15px;
+}
+}
+
 @media screen and (max-width:991px){
  .navigation-menu {
         position: fixed;
@@ -65,9 +71,16 @@ padding: 0 20px;
 .common-text h2 {
 font-size: 45px;
 }
+}
 
 
-
+@media screen and (max-width:767px){
+    html{
+        font-size: 14px;
+    }
+    .img_part {
+        height: 300px;
+    }
 }
 
 
