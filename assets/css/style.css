@@ -652,8 +652,10 @@ body .slick-track {
 }
 .product_cards {
     /* background: #f5f5f7; */
-    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100%;
+    padding: 1.25rem 0;
+    border-radius: .625rem;
 }
 /* card section css end */
 
@@ -1237,11 +1239,12 @@ section.common-banner {
 }
 
 .privacy-section p {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .privacy-section li {
-    font-size: 18px;
+    font-size: 1rem;
+    list-style-type: disc;
 }
 
 .privacy-title {
@@ -1259,11 +1262,11 @@ section.common-banner {
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 2px solid #eaeaea;
-    color: #fe8f9c;
+    color: #000;
 }
 
 .privacy-text {
-    margin-bottom: 15px;
+    margin-bottom: 0.625rem;
     color: #000;
 }
 
@@ -1284,3 +1287,74 @@ section.common-banner {
 .privacy-section a:hover {
     text-decoration: underline;
 }
+/* sub pages css start  */
+.sub-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0 0 0/70%);
+    background-blend-mode:multiply ;
+    height: 28.125rem;
+    position: relative;
+}
+.sub-banner-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.sub-banner-content h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+.sub-banner-content p{
+    font-size: 1.125rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+.img_part {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_part {
+    padding: 3rem 1.875rem;
+}
+
+.text_part h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.text_part p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.text_part h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.text_part p a {
+    color: #E66A31;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+
+
+
