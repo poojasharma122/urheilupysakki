@@ -842,6 +842,7 @@ body .slick-track {
     width: 100%;
     border: 1px solid transparent;
     padding: 14px 16px;
+    border-radius: 50px;
 }
 
 .submit_btn {
