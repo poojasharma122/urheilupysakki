@@ -725,6 +725,7 @@ body .slick-track {
     color: #191919;
     font-weight: 600;
     line-height: 25px;
+    margin-bottom: 0.625rem;
 }
 
 .why-choose-main p {
