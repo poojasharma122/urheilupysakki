@@ -1415,7 +1415,6 @@ section.common-banner {
 
 
 
-
 /* Blog Description Pages CSS Start */
 
 .blog_desc img {
@@ -1553,3 +1552,163 @@ section.common-banner {
     text-underline-offset: 5px;
 }
 /* Blog Page CSS End */
+
+/* Contact Page CSS Start */
+.contact-top_card_icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 5rem;
+    width: 5rem;
+}
+.bg_dark{
+    background-color: #111;
+}
+.contact_top_card {
+    padding: 2rem 1.25rem;
+    border-radius: 0.625rem;
+    height: 100%;
+    overflow: hidden;
+    border-top: 5px solid #d5f637;
+    border-bottom: 5px solid #d5f637;
+}
+.contact_top_card p{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.contact_top_card p a{
+    color: #d5f637;
+    font-weight: 500;
+}
+.text_theme{
+    color: #d5f637;
+}
+.text_white{
+    color: #fff;
+}
+
+
+
+
+/* Contact Us CSS Start */
+.inner_pages_banner.contact_banner {
+    height: 25rem;
+}
+#contact {
+    background-image: url("../images/how-we-compare-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact_us_content .row {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact_us_content fieldset:last-child {
+    margin-bottom: 0;
+}
+
+.contact_us_content #contact button {
+    margin-bottom: 0;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 0.625rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact input:hover,
+#contact textarea:hover,
+#contact select:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+
+#contact textarea {
+    height: 6.25rem;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact select {
+    max-width: 100%;
+    color: #444546;
+    outline: none;
+}
+
+
+
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+
+}
+
+::-webkit-input-placeholder,
+::-webkit-select-placeholder {
+    color: #818181;
+}
+
+:-moz-placeholder {
+    color: #818181;
+}
+
+:-ms-input-placeholder {
+    color: #818181;
+}
+
+.contact-us-group {
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.contact_us_sec {
+    margin-top: 2.5rem;
+}
+.form-image {
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.form-container {
+    padding: 20px;
+}
+.form-wrapper {
+    height: 100%;
+    width: 100%;
+}
+/* Contact Page CSS End*/
