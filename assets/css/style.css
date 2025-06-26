@@ -1367,7 +1367,15 @@ section.common-banner {
 
 
 /* what bs offer css start */
-
+.about_last_wrap {
+    padding: 6rem 3rem;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+}
 .what-be-main {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 330px;
