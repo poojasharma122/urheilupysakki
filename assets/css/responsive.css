@@ -189,6 +189,7 @@ table {
 .about_last_wrap h2 {
     font-size: 1rem;
 }
+
 }
 
 
@@ -209,5 +210,8 @@ font-size: 40px;
 }
 .sub-banner {
     height: 20.125rem;
+}
+.blog_cards_txt span {
+    font-size: 1.1rem;
 }
 }
