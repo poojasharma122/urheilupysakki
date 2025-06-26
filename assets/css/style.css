@@ -1593,11 +1593,16 @@ section.common-banner {
 .text_white{
     color: #fff;
 }
+.contact_top_card hr {
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid #d6f637b7;
+    opacity: 1;
+}
 
 
 
 
-/* Contact Us CSS Start */
 .inner_pages_banner.contact_banner {
     height: 25rem;
 }

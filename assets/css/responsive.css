@@ -71,6 +71,16 @@ padding: 0 20px;
 .common-text h2 {
 font-size: 45px;
 }
+.form-container {
+    padding: 0;
+}
+.contact-us-group {
+    padding: 0;
+}
+.form-image {
+    height: 300px;
+    margin-bottom: 1.875rem;
+}
 }
 
 
