@@ -84,6 +84,12 @@ font-size: 45px;
     .card-img {
         height: 20rem;
     }
+    .copy_txt p {
+        text-align: center;
+    }
+    .ssl_certi {
+        justify-content: center;
+     }
 }
 
 
@@ -132,6 +138,12 @@ table {
 .pt-80 {
     padding-top: 3rem;
 }
+.blog_desc {
+    padding: 2em 1rem;
+}
+.blog_desc img {
+    height: 23.25rem;
+}
 }
 
 
@@ -146,5 +158,8 @@ font-size: 40px;
 }
 .banner_content h1 {
     font-size: 1.6rem;
+}
+.blog_desc img {
+    height: 17.25rem;
 }
 }
