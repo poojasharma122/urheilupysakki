@@ -103,6 +103,9 @@ font-size: 45px;
      .why-choose-heading h2 {
         font-size: 2rem;
     }
+    .text_part {
+        padding: 0;
+    }
 }
 
 
