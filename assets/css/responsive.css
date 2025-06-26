@@ -172,6 +172,16 @@ table {
 .sub-banner {
     height: 25.125rem;
 }
+.what-be-heading h2 {
+    margin-bottom: 1.875rem;
+    font-size: 2rem;
+}
+.about_last_wrap p {
+    font-size: 1rem;
+}
+.about_last_wrap {
+    padding: 3rem 1rem;
+}
 }
 
 
