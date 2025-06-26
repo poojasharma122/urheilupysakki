@@ -100,6 +100,9 @@ font-size: 45px;
     .ssl_certi {
         justify-content: center;
      }
+     .why-choose-heading h2 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -153,6 +156,12 @@ table {
 }
 .blog_desc img {
     height: 23.25rem;
+}
+.why-choose-heading h2 {
+    font-size: 1.7rem;
+}
+.blog-heading h2 {
+    font-size: 2rem;
 }
 }
 

@@ -677,7 +677,7 @@ body .slick-track {
 
 .why-choose-heading h2 {
     color: #191919;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 40px;
     margin-bottom: 20px;
@@ -920,11 +920,10 @@ body .slick-track {
 }
 
 .blog-heading h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #191919;
     line-height: 40px;
-
 }
 
 .bloging {
