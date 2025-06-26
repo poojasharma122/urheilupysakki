@@ -1004,6 +1004,7 @@ body .slick-track {
 .self_footer_address ul li {
     color: #fff;
     font-size: 15px;
+    margin-bottom: 0.625rem;
 }
 
 .self_footer_address ul li span {
@@ -1722,3 +1723,14 @@ fieldset {
     width: 100%;
 }
 /* Contact Page CSS End*/
+
+
+/* Fixes */
+.privacy-subheading {
+    font-size: 1.1rem;
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
+}
+
+
+/* Fixes */
