@@ -568,7 +568,7 @@ body .slick-track {
 
 .section-heading h2 {
     color: #191919;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 40px;
     margin-bottom: 20px;
@@ -576,7 +576,7 @@ body .slick-track {
 }
 
 .section-heading h5 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #363636;
     font-weight: 600;
     line-height: 25px;
@@ -585,12 +585,12 @@ body .slick-track {
 
 .section-heading p {
     color: #000;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 25px;
 }
 
 .product-heading h5 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #000;
     font-weight: 600;
     line-height: 25px;
