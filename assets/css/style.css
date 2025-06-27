@@ -658,14 +658,9 @@ body .slick-track {
     padding:0 0 1.25rem 0;
     border-radius: .625rem;
 }
-
 /* card section css end */
 
-
-
-
 /*why choose us css start  */
-
 .why-chhose-us {
     background-color: #eef2f5;
 }
@@ -674,25 +669,20 @@ body .slick-track {
     text-align: center;
     margin-bottom: 40px;
 }
-
 .why-choose-heading h2 {
     color: #191919;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 40px;
     margin-bottom: 20px;
-
 }
-
 .why-choose-inner {
     max-width: 60rem;
     margin: 0 auto;
 }
-
 .why-choose-inner.why_home {
     max-width: 100%;
 }
-
 .why-choose-img {
     background-position: center;
     background-repeat: no-repeat;
@@ -701,7 +691,6 @@ body .slick-track {
     height: 4.375rem;
     margin-bottom: 16px;
 }
-
 .why-choose-main {
     padding: 2.5rem 1.25rem;
     background: #d5f637;
@@ -710,12 +699,9 @@ body .slick-track {
     transition: .3s ease-in-out;
     height: 100%;
 }
-
 .why-choose-main:hover {
     transform: translateY(-10px);
 }
-
-
 .why-choose-main h5 {
     font-size: 1.25rem;
     color: #191919;
@@ -723,14 +709,12 @@ body .slick-track {
     line-height: 25px;
     margin-bottom: 0.625rem;
 }
-
 .why-choose-main p {
     color: #000;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 0;
 }
-
 /* why choose us css end */
 
 
